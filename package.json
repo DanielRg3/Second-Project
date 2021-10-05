@@ -1,0 +1,21 @@
+{
+  "name": "second-project",
+  "version": "1.0.0",
+  "description": "For this project, we need to create an interactiv webpage with a clean User-Interface for an specific client.\r In this occation our client is **Parota del Carmen**. This client sells wooden tables and chairs, alongside with wooden accessories.\r The intention is to create a webpage in which the user can review all the client inventory {Tables, Chairs, Accessories}, and the product characteristics, such as:\r - Product Dimensions\r - Available Colors\r - Available Pater Designs\r - Pricing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielRg3/Second-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielRg3/Second-Project/issues"
+  },
+  "homepage": "https://github.com/DanielRg3/Second-Project#readme"
+}
