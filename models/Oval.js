@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequilize');
-const sequilize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
 class Oval extends Model {}
 
@@ -12,39 +12,32 @@ Oval.init(
             autoIncrement: true,
         },
         name: {
-            type: DataTypes.STREING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         shape: {
-            type: DataTypes.STREING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         chairs: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        dimensions: {
-            type: DataTypes.STREING,
-            allowNull: false,
-        },
-        Price: {
-            type: DataTypes.STREING,
-            allowNull: false,
-        },
-        description: {
-            type: DataTypes.STREING,
             allowNull: true,
         },
-        gallery_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'gallery',
-                key: 'id',
-            },
+        dimensions: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        Price: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: true,
         },
     },
     {
-        sequilize,
+        sequelize,
         freezeTableName: true,
         underscored: true,
         modelName: 'oval',
