@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequilize');
 const sequilize = require('../config/connection');
 
-class Oval extends Model {}
+class Mirrors extends Model {}
 
-Oval.init(
+Mirrors.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -47,8 +47,8 @@ Oval.init(
         sequilize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'oval',
+        modelName: 'mirrors',
     }
 );
 
-module.exports = Oval;
+module.exports = Mirrors;
