@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequilize');
 const sequilize = require('../config/connection');
 
-class Rectangular extends Model {}
+class Oval extends Model {}
 
-Rectangular.init(
+Oval.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -47,8 +47,6 @@ Rectangular.init(
         sequilize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'rectangular',
+        modelName: 'oval',
     }
 );
-
-module.exports = Rectangular;
