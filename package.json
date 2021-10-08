@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DanielRg3/Second-Project/issues"
   },
-  "homepage": "https://github.com/DanielRg3/Second-Project#readme"
+  "homepage": "https://github.com/DanielRg3/Second-Project#readme",
+  "dependencies": {
+    "sequelize": "^6.6.5"
+  }
 }
