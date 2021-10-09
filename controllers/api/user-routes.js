@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { isModuleNamespaceObject } = require('util/types');
+
 const {User} = require('../../models');
 
 //To create a new user:

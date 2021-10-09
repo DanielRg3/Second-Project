@@ -8,10 +8,10 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const SequilizeStore = require('connect-session-sequilize')(session.Store);
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const routes = require('./controllers'); //route loggics
-const sequilize = require('./config/connection'); //Communication between app and db
+const sequelize = require('./config/connection'); //Communication between app and db
 const helpers = require('./utils/helpers'); //Pending...
 
 const app = express();
@@ -22,8 +22,8 @@ const sess = {
     cookie: {}, //Store information about the session
     resave: false, //Don't delete previous info
     saveUnitialized: true, //Save empty cooky
-    store: new SequilizeStore({ //whre to store the information
-        db: sequilize,
+    store: new SequelizeStore({ //whre to store the information
+        db: sequelize,
     }),
 };
 
@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-sequilize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('We are listening'));
 });
 
