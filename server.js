@@ -1,4 +1,8 @@
 // npm init -y (to install the package.json)
+// npm install
+// npm i dotenv
+// npm i mysql2
+//npm i bcryptjs
 
 const path = require('path');
 const express = require('express');
