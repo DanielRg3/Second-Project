@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Met Data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website Name -->
+    <title>Parota Del Carmen</title>
+
+    <!-- Loading for favicon png -->
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/logo/favicon.png"/>
+
+    <!-- Font Loading for contact form-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- Second Style CSS sheet for contact form  -->
+    <link rel="stylesheet" href="assets/css/style_contact.css"/>
+  </head>
+  <body>
+
+    <!-- Form will start here, loading from comments and email link using php -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+
+                    <!-- Form Title -->
+                    <h3>Contact us</h3>
+
+                    <!-- Under Title Comment(s) -->
+                    <p class="mb-4">
+                      Please write your message, comments and/or request
+                    </p>
+                    <div id="form-message-warning" class="mb-4"></div>
+
+                    <!-- Message when for is send successfully  -->
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+
+                    <!-- Under Text Links/Information for client(s) -->
+                    <div class="row mb-4">
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+
+                            <!-- Adress -->
+                            <p>
+                              <span>Address:</span> Calle 58 Playa Del Carmen
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+
+                            <!-- Email -->
+                            <p>
+                              <span>Email:</span>
+                              <a href="mailto:info@pdc.com">info@pdc.com</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+
+                            <!-- Phone Number /  Whatapp API will go here-->
+                            <p>
+                              <span>WhatApp</span>
+                              <a href="tel://+52 984 000 0000">984 000 0000</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Contact form details and info box -->
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm">
+                      <div class="row">
+                        
+						<div class="col-md-12">
+                          <div class="form-group">
+                            <!-- Enter your Name -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"/>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <!-- Enter your Email -->
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"/>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <!-- Enter the Subject -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"/>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <!-- Write a Message Here -->
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="4"
+                              placeholder="Write a message here"
+                            ></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary"/>
+
+                            <!-- Submitting bottoms/items -->
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                    <!-- Social Media Follow up link -->
+                    <div class="w-100 social-media mt-5">
+                      <h3>Follow us</h3>
+                      <p>
+                        <a href="#">Facebook</a>
+						<a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+				<!-- Right Side BackGround photo -->
+                <div class="col-lg-6 d-flex align-items-stretch">
+                  <div
+                    class="info-wrap w-100 p-5 img"
+                    style="background-image: url(assets/images/img.jpg)">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- All the JS Scripts - Put at the end for faster webpage loading -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
