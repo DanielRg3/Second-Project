@@ -1,6 +1,4 @@
 const User = require('./User');
-const Rectangular = require('./Rectangular');
-const Oval = require('./Oval');
-const Mirrors = require('./Mirrors');
+const Products = require('./Products');
 
-module.exports = {User, Rectangular, Oval, Mirrors};
+module.exports = {User, Products};
