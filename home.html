@@ -1,127 +1,152 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Parota Del Carmen</title>
+    <!-- Bootstrap Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-        <!--linear icon css-->
-		<link rel="stylesheet" href="assets/css/linearicons.css">
+    <!-- Website Title -->
+    <title>Parota Del Carmen</title>
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-
-	</head>
-
-		<body>
-			<header id="home" class="welcome-hero">
-	
-				<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-					<!--/.carousel-indicator -->
-					 <ol class="carousel-indicators">
-						<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
-						<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
-						<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
-					</ol>
-					<!--/.carousel-indicator -->
-	
-					<!--/.carousel-inner -->
-					<div class="carousel-inner" role="listbox">
-						<!-- .item -->
-						<div class="item active">
-							<div class="single-slide-item slide1">
-								<div class="container">
-									<div class="welcome-hero-content">
-										<div class="row">
-											<div class="col-sm-7">
-												<div class="single-welcome-hero">
-													<div class="welcome-hero-txt">
-														<h4>great design collection</h4>
-														<h2>cloth covered accent chair</h2>
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuiana smod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
-														</p>
-														<div class="packages-price">
-															<p>
-																 3990.00 MXN
-																<del> 4990.00 MXN</del>
-															</p>
-														</div>
-														<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-															<span class="lnr lnr-plus-circle"></span>
-															add <span>to</span> cart
-														</button>
-														<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
-															more info
-														</button>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-5">
-												<div class="single-welcome-hero">
-													<div class="welcome-hero-img">
-														<img src="assets/images/slider/slider1.png" alt="slider image">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-
-    <!-- All JS Scripts are at the end of page for faster loading -->
-    <!-- JQuery. JS Script -->
-    <script src="assets/js/jquery.js"></script>
+</head>
+<body>
     
-    <!--modernizr.min.js Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    
-    <!--bootstrap.min.js Script -->
-    <script src="assets/js/jquery.js"></script>
-    
-    <!-- bootsnav js Script -->
-    <script src="assets/js/bootsnav.js"></script>
+    <!-- Carousel with photos - Bootstrap 5.1 -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
 
-    <!--owl.carousel.js Script -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+        </div>
+        <!-- First Photos/Textes -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/homepage/homepage_01.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Parota Del Carmen</h5>
+              <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    
-    <!--Custom JS Script -->
-    <script src="assets/js/custom.js"></script>
-    
+             <div class="slider-btn">
+                 <button class="btn btn-1">Our Products</button>
+                 <button class="btn btn-2">Contact US</button>
+             </div>
+            </div>
+          </div>
+
+          <!-- Second Photos/Textes -->
+          <div class="carousel-item">
+            <img src="assets/images/homepage/homepage_02.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Parota Del Carmen</h5>
+                <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
+
+              <div class="slider-btn">
+                <button class="btn btn-1">Our Products</button>
+                <button class="btn btn-2">Contact US</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Third Photos/Textes -->
+          <div class="carousel-item">
+            <img src="assets/images/homepage/homepage_03.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Parota Del Carmen</h5>
+                <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
+
+              <div class="slider-btn">
+                <button class="btn btn-1">Our Products</button>
+                <button class="btn btn-2">Contact US</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Fourth Photos/Textes -->
+          <div class="carousel-item">
+            <img src="assets/images/homepage/homepage_04.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Parota Del Carmen</h5>
+                <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
+
+              <div class="slider-btn">
+                <button class="btn btn-1">Our Products</button>
+                <button class="btn btn-2">Contact US</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Fifth Photos/Textes -->
+          <div class="carousel-item">
+            <img src="assets/images/homepage/homepage_05.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Parota Del Carmen</h5>
+                <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
+
+              <div class="slider-btn">
+                <button class="btn btn-1">Our Products</button>
+                <button class="btn btn-2">Contact US</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Sixth Photos/Textes -->
+          <div class="carousel-item">
+            <img src="assets/images/homepage/homepage_06.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Parota Del Carmen</h5>
+                <p>Meubleria de Madera Tropical & Carpinteria | Tropical Wood Furniture Store and & Carpenter Shop</p>
+
+              <div class="slider-btn">
+                <button class="btn btn-1">Our Products</button>
+                <button class="btn btn-2">Contact US</button>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+<!-- About us start 2.0 -->
+<section id="sofa-collection">
+    <div class="owl-carousel owl-theme" id="collection-carousel">
+        <div class="sofa-collection collectionbg1">
+            <div class="container">
+                <div class="sofa-collection-txt">
+                    <h2>Nuestra Historia | Our Story</h2>
+                    <p>
+                        Somos una empresa 100% mexicana con más de 10 años de experiencia en el mercado, dedicada a la comercialización y fabricación de productos de madera y derivados.
+                        Tenemos la capacidad de ofrecer diferentes líneas de productos y servicios; todos realizados con la más alta calidad del mercado, a precios muy competitivos y con diseño de vanguardia. Siempre desarrollando proyectos que se ajusten a la necesidad de nuestros clientes.</p>
+                
+                        <p>
+                            We are a 100% Mexican company with more than 10 years of experience in the market, dedicated to the commercialization and manufacture of wood products and derivatives. We have the ability to offer different lines of products and services; All made with the highest quality on the market, at very competitive prices and with avant-garde design. Always developing projects that meet the needs of our clients.
+                        </p>
+                    
+                    </div>
+            </div>	
+</section>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
 </body>
-
 </html>
