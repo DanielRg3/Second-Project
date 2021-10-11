@@ -1,16 +1,10 @@
 const sequelize = require('../config/connection');
-const seedRectangular = require('./rectangularData');
-const seedOval = require('./ovalData');
-const seedMirrors = require('./mirrorsData');
+const seedProducts = require('./productsData');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true});
 
-    await seedRectangular();
-
-    await seedOval();
-
-    await seedMirrors();
+    await seedProducts();
 
     process.exit(0); //why is this 0 for???
 };
