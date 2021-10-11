@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Rectangular,Oval,Mirror } = require('../models');
+const { Products } = require('../models');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
@@ -41,42 +41,20 @@ router.get('/contact', async (req, res) => {
 
 router.get('/products',async (req,res) => {
 try{
-    const dbRectangularData = await Rectangular.findAll({
-         include: [
-         {
-             attributes: ['name', 'price'],
-         },
-         ],
-    });
-    const dbOvalData = await Oval.findAll({
-        include: [
-        {
-            attributes: ['name', 'price'],
-        },
-        ],
-    });
-    const dbMirrorData = await Mirror.findAll({
-        include: [
-        {
-            attributes: ['name', 'price'],
-        },
-        ],
+    const dbProductsData = await Products.findAll({
     });
 
-    const galleriesRec = dbRectangularData.map((gallery) =>
-         gallery.get({ plain: true })
-    );
-    const galleriesOv = dbOvalData.map((gallery) =>
-         gallery.get({ plain: true })
-    );
-    const galleriesMirr = dbMirrorData.map((gallery) =>
+    const products = dbProductsData.map((gallery) =>
          gallery.get({ plain: true })
     );
 
-    res.render('products',{})
+    res.render('products',{
+        products
+    })
 }
 catch(err) {
     console.log(err);
     res.status(500).json(err);
 }
 })
+module.exports=router
