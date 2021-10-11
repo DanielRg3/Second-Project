@@ -23,6 +23,10 @@ Products.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
+        filename: {
+            type: DataTypes.TEXT,
+            allowNull: false,
+          },
     },
     {
         sequelize,
